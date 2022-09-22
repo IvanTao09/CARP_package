@@ -1,0 +1,1 @@
+clang++ -O3 -Wall -shared -std=c++11 -fPIC `python3 -m pybind11 --includes` `python3-config --ldflags` -lpython3.9 -L/######here is your armadillo path####### -larmadillo.11.2.3 helper.cpp tree_class.cpp py_tree.cpp -o py_tree`python3-config --extension-suffix`
